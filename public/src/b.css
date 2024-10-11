@@ -19,7 +19,7 @@ a {
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    display: flex;
+    display:flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
@@ -427,132 +427,152 @@ button {
 
 }
 
-/* Estilizando a seção do anfitrião */
+
 .host-info {
-    margin-top: 20px; /* Espaçamento superior para separar do mapa */
-    font-family: 'Roboto', sans-serif; /* Fonte usada */
-    background-color: #f9f9f9; /* Fundo claro para destacar a seção */
-    padding: 20px; /* Espaçamento interno */
-    border-radius: 8px; /* Bordas arredondadas */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra leve para profundidade */
+    margin-top: 20px;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9; 
+    padding: 20px; 
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
 }
 
-/* Título principal da seção */
 .host-info h2 {
-    font-size: 1.8em; /* Tamanho do cabeçalho principal */
-    margin-bottom: 5px; /* Espaçamento inferior */
-    color: #333; /* Cor do texto */
+    font-size: 1.8em; 
+    margin-bottom: 5px; 
+    color: #333;
 }
 
-/* Subtítulos dentro da seção */
+
 .host-info h3 {
-    font-size: 1.4em; /* Tamanho dos subcabeçalhos */
-    margin-bottom: 10px; /* Espaçamento inferior */
-    color: #555; /* Cor do texto dos subtítulos */
+    font-size: 1.4em; 
+    margin-bottom: 10px; 
+    color: #555; 
 }
 
-/* Estilo para parágrafos */
 .host-info p {
-    margin-bottom: 10px; /* Espaçamento entre parágrafos */
-    color: #666; /* Cor do texto */
+    margin-bottom: 10px; 
+    color: #666;
 }
 
-/* Estilo para o link de mensagem */
+
 .message-host {
-    display: inline-block; /* Exibição em bloco */
-    color: #007bff; /* Cor do link */
-    text-decoration: none; /* Remove o sublinhado */
-    margin-top: 10px; /* Espaçamento superior */
+    display: inline-block; 
+    color: #007bff;
+    text-decoration: none; 
+    margin-top: 10px; 
 }
 
 .message-host:hover {
-    text-decoration: underline; /* Sublinha ao passar o mouse */
+    text-decoration: underline; 
 }
 
-/* Estilo do perfil do usuário */
+
 .user-profile,
 .co-hosts,
 .host-information {
-    margin-top: 30px; /* Aumenta o espaço acima da seção do perfil do usuário */
-    margin-bottom: 20px; /* Espaçamento inferior entre seções */
-    border-bottom: 1px solid #eaeaea; /* Linha separadora */
-    padding-bottom: 15px; /* Espaçamento inferior */
+    margin-top: 30px; 
+    margin-bottom: 20px; 
+    border-bottom: 1px solid #eaeaea; 
+    padding-bottom: 15px; 
     
 }
 
-/* Remover a linha do último item */
+
 .host-information {
-    border-bottom: none; /* Remove a linha da última seção */
+    border-bottom: none; 
 }
 
-/* Estilo da foto de perfil */
+
 .profile-photo {
-    margin-bottom: 15px; /* Espaçamento inferior da imagem */
+    margin-bottom: 15px; 
 }
 
 .profile-photo img {
-    width: 100px; /* Largura da imagem */
-    height: 100px; /* Altura da imagem */
-    border-radius: 50%; /* Bordas arredondadas para fazer um círculo */
-    object-fit: cover; /* Para garantir que a imagem se ajuste ao espaço */
-    border: 2px solid #eaeaea; /* Borda leve ao redor da imagem */
+    width: 100px; 
+    height: 100px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+    border: 2px solid #eaeaea;
 }
 
-/* Layout flexível para o perfil e coanfitriões */
+
 .user-info-container {
-    display: flex; /* Usar flexbox para o layout */
-    justify-content: space-between; /* Espaçamento igual entre as seções */
-    align-items: flex-start; /* Alinhar itens no topo */
-    margin-top: 20px; /* Espaçamento superior */
+    display: flex; 
+    justify-content: space-between; 
+    align-items: flex-start; 
+    margin-top: 20px; 
 }
 
-/* Ajuste de tamanho entre os itens */
+
 .user-profile,
 .co-hosts,
 .host-information {
-    margin-right: 20px; /* Espaçamento entre as seções */
-    flex: 1; /* Permitir que todas as seções ocupem espaço igual */
+    margin-right: 20px; 
+    flex: 1; 
 }
 
-/* Ajustar o tamanho da seção de anfitriões */
+
 .co-hosts,
 .host-information {
-    flex: 2; /* Aumenta o espaço ocupado por essas seções */
+    flex: 2; 
 }
 
 .co-host-photo {
-    margin-bottom: 10px; /* Espaçamento inferior da imagem */
+    margin-bottom: 10px; 
 }
 
 .co-host-photo img {
-    width: 100px; /* Largura da imagem */
-    height: 100px; /* Altura da imagem */
-    border-radius: 50%; /* Bordas arredondadas para fazer um círculo */
-    object-fit: cover; /* Para garantir que a imagem se ajuste ao espaço */
-    border: 2px solid #eaeaea; /* Borda leve ao redor da imagem */
+    width: 100px; 
+    height: 100px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+    border: 2px solid #eaeaea; 
 }
+
 
 .info-container {
-    display: flex; /* Habilita o layout flexível */
-    justify-content: space-between; /* Espaço entre as seções */
-    margin-top: 20px; /* Espaçamento superior */
+    display: flex;
+    justify-content: space-between; /* Espaça os elementos */
+    margin-top: 20px;
 }
 
-.house-rules,
-.politic-info, 
-.security-info {
-    flex: 1; /* Permite que as seções ocupem uma parte do espaço disponível */
-    margin-right: 20px; /* Espaço à direita da seção de regras da casa */
+.house-rules {
+    width: 30%; /* Cada seção ocupa 30% da largura */
+    padding-top: 100px;
 }
 
-/* Remover a margem direita da última seção */
-.security-info {
-    margin-right: 0; /* Remove a margem à direita da seção de segurança */
+.cancellation-policy{
+    padding-top: 100px;
+    width: 30%; 
+
 }
+
+.safety-and-property{
+    padding-top: 100px;
+    width: 30%; 
+}
+
+.show-more {
+    color: #333; /* Cor do link */
+    text-decoration: none;
+}
+
+.house-rules ul, .safety-and-property ul {
+    list-style-type: none;
+    padding-right: 100px;
+    padding-left: 0%;
+    
+}
+
+.house-rules li, .safety-and-property li {
+    margin-bottom: 5px;
+}
+
 
 /* Estilos adicionais */
 h3 {
-    margin-bottom: 10px; /* Espaçamento inferior para os títulos */
+    margin-bottom: 40px; /* Espaçamento inferior para os títulos */
 }
 
 .show-more {
@@ -565,3 +585,70 @@ h3 {
 .show-more:hover {
     text-decoration: underline; /* Sublinha ao passar o mouse */
 }
+
+.info-title {
+    font-size: 24px; /* Tamanho do título principal */
+    font-weight: bold; /* Negrito */
+    margin-bottom: 0%; /* Espaçamento inferior do título */
+    color: #333; /* Cor do texto do título */
+    text-align: left; /* Alinha o texto à esquerda */
+    white-space: nowrap; /* Impede a quebra de linha */
+
+}
+
+.footer {
+    background-color: #f8f8f8; /* Cor de fundo do rodapé */
+    padding: 20px; /* Espaçamento interno */
+    margin-top: 40px; /* Espaçamento acima do rodapé */
+    border-top: 1px solid #e2e2e2; /* Linha acima do rodapé */
+    text-align: center; /* Centraliza o texto */
+    clear: both; /* Limpa floats anteriores */
+}
+
+.footer-container {
+    display: flex; /* Exibe as seções do rodapé em linha */
+    justify-content: space-around; /* Espalha as seções de forma uniforme */
+    flex-wrap: wrap; /* Permite que as seções quebrem para uma nova linha se necessário */
+    padding: 0; /* Remove qualquer padding interno */
+    margin: 0; /* Remove margens */
+    padding-top: 30px; /* Espaçamento superior no contêiner do footer */
+    padding-left: 150px; /* Espaçamento à esquerda no contêiner do footer */
+}
+
+.footer-section {
+    flex: 1; /* Faz as seções ocuparem igual espaço disponível */
+    min-width: 200px; /* Define uma largura mínima para evitar que as seções fiquem muito pequenas */
+    margin: 0 10px; /* Margem horizontal para espaçamento entre as seções */
+    text-align: left; /* Alinha o texto das seções à esquerda */
+}
+
+.footer-section ul {
+    list-style-type: none; /* Remove os marcadores da lista */
+    padding-left: 0; /* Remove o preenchimento à esquerda */
+    margin: 0; /* Remove margens */
+}
+
+.footer-section ul li {
+    line-height: 30px; /* Ajuste o valor conforme necessário para o espaçamento entre as linhas */
+}
+
+.footer-bottom {
+    margin-top: 20px; /* Espaçamento acima da seção de rodapé */
+    font-size: 14px; /* Tamanho da fonte */
+    color: #484848; /* Cor do texto */
+    text-align: center; /* Centraliza o conteúdo da seção inferior */
+}
+
+/* Adicione um clearfix se necessário */
+.footer::after {
+    content: "";
+    display: table;
+    clear: both; /* Limpa os floats dentro do footer */
+}
+
+.footer-container h4{
+    font-weight: normal;
+}
+
+
+
