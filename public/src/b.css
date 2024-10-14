@@ -560,24 +560,19 @@ label {
 
 .info-container {
     display: flex;
-    justify-content: space-between; 
+    flex-direction: column; 
     margin-top: 20px;
+    padding: 0 10px; 
 }
 
-.house-rules {
-    width: 30%; 
-    padding-top: 100px;
+.info-title {
+    margin-bottom: 20px; 
 }
 
-.cancellation-policy{
-    padding-top: 100px;
-    width: 30%; 
-
-}
-
-.safety-and-property{
-    padding-top: 100px;
-    width: 30%; 
+.house-rules, .cancellation-policy, .safety-and-property {
+    width: 100%; 
+    padding: 10px; 
+    box-sizing: border-box;
 }
 
 .show-more {
@@ -587,14 +582,13 @@ label {
 
 .house-rules ul, .safety-and-property ul {
     list-style-type: none;
-    padding-right: 100px;
-    padding-left: 0%;
-    
+    padding-left: 0; 
 }
 
 .house-rules li, .safety-and-property li {
     margin-bottom: 5px;
 }
+
 
 
 
@@ -657,15 +651,170 @@ h3 {
     text-align: center; 
 }
 
-
 @media (max-width: 768px) {
-    .footer-container {
-        flex-direction: column; 
-        align-items: center; 
+    .container {
+        flex-direction: column;
     }
-    .footer-section {
-        margin: 10px 0; 
+
+    .header .nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .photos {
+        grid-template-columns: repeat(2, 1fr); 
+        grid-template-rows: repeat(3, 220px);  
+    }
+
+    .img1 {
+        grid-column: 1 / 3; 
+        grid-row: 1 / 2;
+    }
+
+    .img2, .img3, .img4, .img5 {
+        grid-column: 1 / 2; 
+    }
+
+    .listing {
+        flex-direction: column;
+    }
+
+    .details-section, .price-section {
+        width: 100%;
+        margin-bottom: 20px;
     }
 }
 
 
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    .photos {
+        grid-template-columns: 1fr; 
+        grid-template-rows: repeat(5, 220px);  
+    }
+
+    .img1 {
+        grid-column: 1 / 2; 
+        grid-row: 1 / 2;
+    }
+
+    .img2, .img3, .img4, .img5 {
+        grid-column: 1 / 2; 
+    }
+
+    .host-info {
+        padding: 10px;
+    }
+
+    .amenities ul li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .reserve-button {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+    .user-actions {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .search-bar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .search-option {
+        padding: 5px 0;
+    }
+
+    .search-button {
+        padding: 10px;
+        border-radius: 50%;
+    }
+
+    .price-section {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .photos {
+        grid-template-columns: repeat(2, 1fr); 
+        grid-template-rows: repeat(3, 120px); 
+    }
+
+    .img1 {
+        grid-column: 1 / 3;
+        grid-row: 1 / 2;
+    }
+
+    .img2, .img3, .img4, .img5 {
+        grid-column: auto;
+        grid-row: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .photos {
+        grid-template-columns: repeat(2, 1fr); 
+        grid-template-rows: repeat(3, 100px);
+    }
+
+    .img1 {
+        grid-column: 1 / 3;
+        grid-row: 1 / 2;
+    }
+
+    .img2, .img3, .img4, .img5 {
+        grid-column: auto;
+        grid-row: auto;
+    }
+
+    .img1 img {
+        border-top-left-radius: 15px; 
+        border-top-right-radius: 15px; 
+        border-bottom-left-radius: 0;   
+    }
+
+    .img3 img {
+        border-top-right-radius: 0;      
+    }
+
+    .img4 img {
+        border-bottom-left-radius: 15px; 
+    }
+
+    .img5 img {
+        border-bottom-right-radius: 15px; 
+    }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden; 
+}
+
+
+@media (min-width: 768px) {
+    .info-container {
+        flex-direction: row; 
+        justify-content: space-between; 
+    }
+    
+    .house-rules, .cancellation-policy, .safety-and-property {
+        width: 30%; 
+        padding: 20px; 
+    }
+}
